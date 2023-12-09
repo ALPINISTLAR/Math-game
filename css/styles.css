@@ -62,13 +62,48 @@ select:-webkit-autofill:focus {
 /* *** CONTAINER *** */
 .container
 {
+  max-width: 375px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  /* border: 3px solid red; */
 }
 
 /* ** MAIN CONTENT ** */
 .main-content
 {
+  padding-top: 30px;
   flex-grow: 1;
+}
+
+.phone{
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  width: 100%;
+  height: 630px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 10px 20px;
+}
+.phone__top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: black;
+}
+.circle{
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.phone__content{
+  flex-grow: 1;
+  padding: 10px;
+}
+.phone__bottom{
+  height: 25px;
+  background-color: black;
 }
