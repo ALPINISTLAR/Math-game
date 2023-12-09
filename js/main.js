@@ -65,13 +65,13 @@ function startCountdown() {
       stopCountdown();
       show("gameOver");
 
-      document.getElementById("gameOver").innerHTML = "<p>Game over!</p><p>Your score is " + score + ".</p>";
+      document.getElementById("gameOver").innerHTML = "<p>O'yin tugadi!</p><p>Sizning ochkoingiz " + score + ".</p>";
       hide("timeremaining");
       hide("correct");
       hide("wrong");
       playing = false;
 
-      document.getElementById("startreset").innerHTML = "Start Game";
+      document.getElementById("startreset").innerHTML = "O'yinni boshlash";
     }
   }, 1000);
 }
