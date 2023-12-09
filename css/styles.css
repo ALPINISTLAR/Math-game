@@ -102,8 +102,38 @@ select:-webkit-autofill:focus {
 .phone__content{
   flex-grow: 1;
   padding: 10px;
+  padding-top: 4px;
 }
 .phone__bottom{
   height: 25px;
   background-color: black;
+}
+h2{
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+
+  background-image: linear-gradient(to right, #ff6b6b, #6b6bff);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /* color: gray; Boshlang'ich rang */
+  animation: colorAnimation 1s infinite alternate;
+  /* animation-timing-function: ease-out; */
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-image: linear-gradient(to right, #ff6b6b, #6b6bff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    color: #000000;
+  }
 }
