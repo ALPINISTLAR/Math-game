@@ -1,65 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- ======================================= -->
-  <!-- =====         GOOGLE FONTS         ==== -->
-  <!-- ======================================= -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-  <!-- =============================== -->
-  <!-- =====       STYLES        ===== -->
-  <!-- =============================== -->
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <title>Math Game</title>
 </head>
+
 <body>
-<!-- ************************ -->
-<!-- ***   MAIN SECTION   *** -->
-<!-- ************************ -->
-<main class="main-content">
-  <div class="container">
-    <div class="box phone">
-<div class="phone__top"><div class="circle"></div></div>
-<div class="phone__content">
-  <h2>Math game</h2>
 
-  <div class="cons-wrapper">
-    <button class="button toggle-button" type="button" onclick="toggleText()">+</button>
-
-    <p class="result"></p>
-
-    <p class="time">00:10</p>
-  </div>
-
-<div class="condition">x va y ning yig'indisini hisoblang!</div>
-
-<div class="answers">
-  <div class="answer"></div>
-  <div class="answer"></div>
-  <div class="answer"></div>
-  <div class="answer"></div>
-</div>
-
-<div class="starter">
-  <button class="button btn-starter start-js">start</button>
-  <button class="button btn-starter restart-js">restart</button>
-</div>
-</div>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
 
 
+  <div id="container">
+    <div id="timeremaining">
+      Vaqt: <span id="timeremainingvalue">60</span>
+    </div>
+    <div id="score">
+      Ochko: <span id="scorevalue" style="font-weight: 900">0</span>
+    </div>
+    <div id="correct">
+      To'g'ri!
+    </div>
+    <div id="wrong">
+      Qayta urinib ko'ring!
+    </div>
+    <div id="question">
 
+    </div>
+    <div id="instruction">
+      To'g'ri javobni tanlang.
+    </div>
+    <div id="choices">
 
-<div class="phone__bottom"></div>
+      <div id="box1" class="box"> </div>
+      <div id="box2" class="box"> </div>
+      <div id="box3" class="box"> </div>
+      <div id="box4" class="box"> </div>
+    </div>
+    <div id="startreset">
+      O'yinni boshlash
+    </div>
+    <div id="gameOver">
+
     </div>
   </div>
-</main>
+
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
