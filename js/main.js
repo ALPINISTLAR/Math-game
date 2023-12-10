@@ -58,23 +58,25 @@ for (i = 1; i < 5; i++) {
 function startCountdown() {
   action = setInterval(function () {
     timeremaining -= 1;
-
-
     document.getElementById("timeremainingvalue").innerHTML = timeremaining;
-    if (timeremaining == 0) {
+
+    if (timeremaining <= 0) {
       stopCountdown();
       show("gameOver");
-
-      document.getElementById("gameOver").innerHTML = "<p>O'yin tugadi!</p><p>Sizning ochkoingiz " + score + ".</p>";
+      document.getElementById("gameOver").innerHTML = "<p>O'yin tugadi!</p><p>Siz " + score + " ochko to'pladingiz.</p>";
       hide("timeremaining");
       hide("correct");
       hide("wrong");
       playing = false;
-
       document.getElementById("startreset").innerHTML = "O'yinni boshlash";
+    } else if (timeremaining <= 20) {
+      document.getElementById("timeremaining").style.color = "red";
+    } else if (timeremaining <= 40) {
+      document.getElementById("timeremaining").style.color = "yellow";
     }
   }, 1000);
 }
+
 
 function stopCountdown() {
   clearInterval(action);
